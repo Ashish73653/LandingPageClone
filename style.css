@@ -255,8 +255,54 @@
 }
 
 .fifth{
+    height: 85vh;
+}
+.fifth .fheading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 2rem;
+    color: rgb(102, 102, 102);
+}
+.fifth .card1{
+    position: relative;
+    width: 20%;
+    background-color: rgb(235, 221, 221);
+    margin: 5rem;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow: 15px 23px 22px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 15px 23px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 23px 22px 0px rgba(0,0,0,0.75);
+}
+.fifth .card1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.fifth .card1 .img img{
+    position: absolute;
+    transform: translate(60%,30%);
+    border-radius: 50%;
+}
+.fifth .card1 .content{
+    position: absolute;
+    top: 15rem;
+    padding: 10px;
+    text-align: center;
+}
+.fifth .card1 .name{
+    position: absolute;
+    top: 20rem;
+    transform: translate(8rem, 0);
+}
+.fifth .card1 .desig{
+    position: absolute;
+    top: 21rem;
+    transform: translate(5.6rem, 0);
+}
+.fifth .container{
     display: flex;
-    height: 90vh;
+    justify-content: space-between;
 }
 
 .last{
