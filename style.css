@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 4px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+.header{
+    background: url('images/desktop/image-header.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    width: 100%;
+}
+.header .navbar .left-nav{
+    cursor: pointer;
+}
+.header .navbar .right-nav{
+    display: flex;
+}
+.header .navbar .right-nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header .navbar .right-nav ul li{
+    justify-content: space-between;
+    margin-left: 60px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+}
+.header .navbar .right-nav ul li button{
+    color: black;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .3s;
+    font-size: .8rem;
+    padding: .7rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.header .navbar .right-nav ul li button:hover{
+    background: hsla(0, 0%, 100%, 0.37);
+    color: hsl(0, 0%, 100%);
+}
+
+.header .hero-heading{
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: .5rem;
+    font-weight: 900;
+    margin: 1.5rem;
+    text-align: center;
+}
+.header .arrow{
+    text-align: center;
+    animation-name: arrow-down;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.second{
+    height: 70vh;
+}
+.second .sec-left{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+.second .sec-left h2{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(212, 27%, 19%);
+    line-height: 1.5rem;
+}
+.second .sec-left .con{
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    color: hsl(232, 10%, 55%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 27px;
+}
+.second .sec-left .baseLine{
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: "Fraunces";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    /* box-shadow: 0px 14px 7px 1px rgb(230, 176, 76);
+    -webkit-box-shadow: 0px 14px 7px 1px rgb(230, 176, 76);
+    -moz-box-shadow: 0px 14px 7px 1px rgb(230, 176, 76); */
+    cursor: pointer;
+}
+.second .sec-right{
+    width: 50%;
+    height: 100%;
+}
+.second .sec-right img{
+    width: 100%;
+    height: 100%;
+}
+.second{
+    display: flex;
+}
+.second .sec-left .textS{
+    padding: 140px;
+}
+
+
+
+
+.third{
+    height: 70vh;
+}
+.third .third-right{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+.third .third-right h2{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(212, 27%, 19%);
+    line-height: 1.5rem;
+}
+.third .third-right .con{
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    color: hsl(232, 10%, 55%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 27px;
+}
+.third .third-right .baseLine{
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: "Fraunces";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    /* box-shadow: 0px 14px 7px 1px rgb(230, 176, 76);
+    -webkit-box-shadow: 0px 14px 7px 1px rgb(230, 176, 76);
+    -moz-box-shadow: 0px 14px 7px 1px rgb(230, 176, 76); */
+    cursor: pointer;
+}
+.third .third-left{
+    width: 50%;
+    height: 100%;
+}
+.third .third-left img{
+    width: 100%;
+    height: 100%;
+}
+.third{
+    display: flex;
+}
+.third .third-right .textS{
+    padding: 140px;
+}
+
+.fourth{
+    height: 70vh;
+    display: flex;
+}
+.fourth .f-left{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.fourth .f-left img{
+    height: 100%;
+    width: 100%;
+}
+.fourth .f-right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.fourth .f-right img{
+    height: 100%;
+    width: 100%;
+}
+.fourth .f-left .textF{
+    position: absolute;
+    top: 0;
+    padding: 250px 185px 0 185px;
+}
+
+.fourth .f-left .textF .title{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color:  hsl(168, 34%, 41%);
+}
+.fourth .f-left .textF .conF{
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 27px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color:  hsl(168, 34%, 41%);
+}
+.fourth .f-right .textF{
+    position: absolute;
+    top: 0;
+    padding: 250px 185px 0 185px;
+}
+
+.fourth .f-right .textF .title{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color:  hsl(198, 62%, 26%);
+}
+.fourth .f-right .textF .conF{
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 27px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color:  hsl(198, 62%, 26%);
+}
+
+.fifth{
+    display: flex;
+    height: 90vh;
+}
+
+.last{
+    display: flex;
+    height: 60vh;
+}
+.last .f,.s,.t,.fo{
+    width: 25%;
+}
+.last .f img,.s img,.t img,.fo img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    height: 40vh;
+    background-color: #9ad9ce;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .fimg{
+    font-size: 3rem;
+    color: hsl(167, 40%, 24%);
+    font-weight: 900;
+}
+.footer .fList{
+    color: hsl(212, 27%, 19%);
+    display: flex;
+}
+.footer .fList ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+}
+.footer .fList li{
+    margin: 0 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: "Barlow", sans-serif;
+    color: hsl(167, 40%, 24%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer .logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .logos ul{
+    display: flex;
+    list-style: none;
+}
+.footer .logos li{
+    margin: 20px 15px;
+    cursor: pointer;
+}
