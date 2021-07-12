@@ -367,6 +367,10 @@
     cursor: pointer;
 }
 
+.mobnav{
+    display: none;
+}
+
 @media (max-width:780px){
     .second {
         height: 40vh;
@@ -381,7 +385,7 @@
         padding: 65px 40px;
     }
     .third .third-right h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     .fourth{
         height: 45vh;
@@ -423,4 +427,156 @@
         height: 30vh;
     }
 
+}
+@media (max-width:430px){
+    .header{
+        height: 90vh;
+    }
+    .mobnav{
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .header .navbar .right-nav ul{
+        flex-direction: column;
+    }
+    .header .navbar .left-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .navbar .right-nav{
+        display: block;
+        justify-content: center;
+        margin: 20px 0px;
+        background: transparent;
+    }
+    .header .navbar .right-nav ul li{
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+    .second{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .second .sec-left{
+        width: 100%;
+    }
+    .second .sec-left .textS{
+        padding: 80px 30px;
+    }
+    .second .sec-right{
+        width: 100%;
+    }
+    .third{
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .third .third-right{
+        width: 100%;
+    }
+    .third .third-right .textS{
+        padding: 80px 30px;
+    }
+    .third .third-left{
+        width: 100%;
+    }
+    .fourth{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .fourth .f-left{
+        width: 100%;
+    }
+    .fourth .f-right{
+        width: 100%;
+    }
+    .last {
+        height: 20vh;
+    }
+    .fifth{
+        height: 100vh;
+        margin-bottom: 26rem;
+    }
+    .fifth .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .fifth .card1{
+        width: 80%;
+        margin: 1rem 3rem;
+        height: 22rem;
+    }
+    .fifth .card1 .img img{
+        transform: translate(65%, 20%);
+    }
+    .fifth .card1 .content{
+        top: 12rem;
+        padding: 10px 30px;
+    }
+    .fifth .fheading {
+        padding-bottom: 1rem;
+    }
+    .fifth .card1 .name{
+        top: 18rem;
+        transform: translate(8.8rem, 0);
+    }
+    .fifth .card1 .desig {
+        position: absolute;
+        top: 19rem;
+        transform: translate(6.4rem, 0);
+    }
+    #menu{
+        display: none;
+    }
+    
+}
+@media (max-width:390px){
+    .fifth{
+        margin-bottom: 40rem;
+    }
+    .fifth .card1{
+        width: 70%;
+        margin: 1rem 3.5rem;
+    }
+    .header{
+        height: 100vh;
+    }
+    .second{
+        margin-bottom: 13rem;
+    }
+    .fourth .f-left .textF{
+        padding: 108px 15px 0 15px;
+    }
+    .fourth .f-right .textF{
+        padding: 130px 15px 0 15px;
+    }
+    .fifth .fheading{
+        font-size: 1.6rem;
+    }
+    .fifth .card1 .img img {
+        transform: translate(45%, 20%);
+    }
+    .fifth .card1 .name {
+        top: 19rem;
+        transform: translate(6.8rem, 0);
+    }
+    .fifth .card1 .desig {
+        position: absolute;
+        top: 20rem;
+        transform: translate(4.4rem, 0);
+    }
+    .footer .fList{
+        display: none;
+    }
+    .header .hero-heading {
+        font-size: 1.2rem;
+        color: hsl(0, 0%, 100%);
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+    }
+    #menu{
+        display: none;
+    }
 }
