@@ -278,6 +278,7 @@
 .fifth .card1:hover{
     transform: scale(1.1);
     cursor: pointer;
+    transition: ease-in-out 1s;
 }
 .fifth .card1 .img img{
     position: absolute;
@@ -318,7 +319,7 @@
 }
 
 .footer{
-    height: 40vh;
+    height: 35vh;
     background-color: #9ad9ce;
     display: flex;
     align-items: center;
@@ -364,4 +365,62 @@
 .footer .logos li{
     margin: 20px 15px;
     cursor: pointer;
+}
+
+@media (max-width:780px){
+    .second {
+        height: 40vh;
+    }
+    .second .sec-left .textS {
+        padding: 65px 40px;
+    }
+    .third {
+        height: 40vh;
+    }
+    .third .third-right .textS {
+        padding: 65px 40px;
+    }
+    .third .third-right h2{
+        font-size: 30px;
+    }
+    .fourth{
+        height: 45vh;
+    }
+    .fourth .f-left .textF{
+        padding: 200px 15px 0 15px;
+    }
+    .fourth .f-right .textF{
+        padding: 200px 15px 0 15px;
+    }
+    .fifth {
+        height: 65vh;
+    }
+    .fifth .fheading{
+        padding-bottom: 2rem;
+    }
+    .fifth .card1{
+        width: 30%;
+        margin: 1rem;
+        height: 28rem;
+    }
+    .fifth .card1 .img img{
+        transform: translate(25%,30%);
+    }
+    .fifth .card1 .name {
+        position: absolute;
+        top: 22rem;
+        transform: translate(6rem, 0);
+    }
+    .fifth .card1 .desig {
+        position: absolute;
+        top: 23rem;
+        transform: translate(4rem, 0);
+    }
+    .last{
+        height: 30vh;
+    }
+    .footer{
+        height: 30vh;
+    }
+
 }
